@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Registration Form</h1>
+            <p>Please fill out this form with the required information</p>
+        </section>
+        <section>
+            <legend>Enter Your First Name:</legend>
+            <label for="First_name">
+            <input type="text" name="First_name" id="First_name" required></label>
+            <legend>Enter Your Last Name:</legend>
+            <label for="Last_name">
+                <input type="text" id="Last_name" name="Last_name" required>
+            </label>
+            <legend>Enter Your Email:</legend>
+            <label for="Email">
+                <input type="email" id="Email" name="Email" required>
+            </label>
+            <legend>Create a New Password:</legend>
+            <label for="password">
+                <input type="password" id="password" name="password" required>
+            </label>
+        </section><hr>
+        <section>
+            <legend>Account type (required)</legend>
+            <div class="radio-container">
+            <label for="personal">
+                <input type="radio" id="personal" name="account" class="inline" value="Personal" checked> Personal
+            </label></div>
+            <div class="radio-container">
+            <label for="buisness">
+                <input type="radio" id="buisness" name="account" class="inline" value="Buisness" > Buisness
+            </label></div>
+        </section><hr>
+        <section>
+            <legend>Upload a profile picture:</legend>
+            <label for="file">
+                <input type="file" id="file" name="file" placeholder="No file chosen">
+            </label>
+            <legend>Input your age (years):</legend>
+            <label for="age">
+                <input type="number" id="age" name="age" min="13" max="100">
+            </label>
+            <legend>How did you hear about us?</legend>
+            <label for="refer">
+                <select id="refer" name="refer">
+                    <option value="" selected disabled>Select One</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="friend">Friend</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <legend>Provide a bio:</legend>
+            <textarea rows="3" placeholder="I like coding on beach"></textarea>
+        </section>
+        <div class="radio-container">
+        <label for="agree">
+        <input type="checkbox" id="agree" class="inline" name="agree"> I accept the <a href="">terms and conditions</a>
+    </label></div>
+    <button value="submit">Submit</button>
+    </main>
+</body>
+</html>
